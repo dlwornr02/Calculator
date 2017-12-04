@@ -25,12 +25,13 @@ namespace Calculator
         {
             ip = txt_IP.Text;
             port = txt_Port.Text;
-
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
     }
